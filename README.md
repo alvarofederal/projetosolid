@@ -1,20 +1,25 @@
-CONFIGURAÇÃO DE APLICAÇÃO BASE PARA ARQUITETURA COM SOLID PARA SISTEMAS JAVA
+# CONFIGURAÇÃO DE APLICAÇÃO BASE PARA ARQUITETURA COM SOLID PARA SISTEMAS JAVA
 
 
 
-Observações:
+## Observações:
 
 Este código demonstra a implementação dos princípios SOLID, mas pode ser expandido e adaptado para atender às necessidades específicas do seu projeto.
 
-SRP: Cada classe tem uma única responsabilidade bem definida.
 
-OCP: A classe ConsultaBancoDeDados pode ser facilmente estendida para outras implementações de consultas, como consultas a APIs ou arquivos.
+SRP: ``Cada classe tem uma única responsabilidade bem definida.``
 
-LSP: A interface Consulta garante que diferentes implementações de consultas podem ser usadas de forma intercambiável.
 
-ISP: A classe Main usa interfaces específicas para cada componente, evitando dependências de implementações concretas.
+OCP: ``A classe ConsultaBancoDeDados pode ser facilmente estendida para outras implementações de consultas, como consultas a APIs ou arquivos.``
 
-DIP: A classe GerenciadorDeConsultas depende de abstrações (interfaces) e não de implementações concretas.
+
+LSP: ``A interface Consulta garante que diferentes implementações de consultas podem ser usadas de forma intercambiável.``
+
+
+ISP: ``A classe Main usa interfaces específicas para cada componente, evitando dependências de implementações concretas.``
+
+
+DIP: ``A classe GerenciadorDeConsultas depende de abstrações (interfaces) e não de implementações concretas.``
 
 O código inclui tratamento básico de exceções na classe ValidadorDeCriterios, mas pode ser expandido para lidar com outras exceções que podem ocorrer.
 
@@ -24,7 +29,7 @@ A documentação do código auxilia na compreensão do seu funcionamento.
 
 
 
-Outras considerações:
+## Outras considerações:
 
 A classe ConsultaBancoDeDados pode usar um framework de persistência, como JPA ou Hibernate, para interagir com o banco de dados.
 
